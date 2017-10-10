@@ -1,2 +1,35 @@
-blah blah blah
-second line
+########## how to collaborate using GIT
+
+There are two distinct  roles (owner and collaborator)
+1.Owner instructions: http://swcarpentry.github.io/git-novice/07-github/
+2.Collaborator instructions: http://swcarpentry.github.io/git-novice/08-collab/
+Owner: use the repository you already have
+
+# for people to invite me 
+32610498+cmalinka@users.noreply.github.com 
+or 
+cmalinka (username)
+
+# to become an owner 
+git init 
+git remote add origin https://github.com/cmalinka/again.git
+git remote -v 
+git add blah.txt
+git commit blah.txt 
+git push origin master
+# invite collaborator via github online, using their username
+# collaborator makes changes 
+git pull origin master  # to view changes collaborator made 
+
+#####
+
+# to become a collaborator 
+# clone their online version to sometihng on my computer 
+git clone https://github.com/askemj/git-lesson.git ~/git-lesson-aske
+nano *.txt                    # edit the file
+git add *.txt                 # to add it to arena
+git commit -m "added line 4"  # committed
+git push origin master        # send to owner 
+# wait for owner to make changes
+git pull origin master 
+# should always "git pull" before making changes.
