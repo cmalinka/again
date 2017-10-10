@@ -15,7 +15,7 @@ git init
 git remote add origin https://github.com/cmalinka/again.git
 git remote -v 
 git add blah.txt
-git commit blah.txt 
+git commit -m "[comment]" 
 git push origin master
 # invite collaborator via github online, using their username
 # collaborator makes changes 
